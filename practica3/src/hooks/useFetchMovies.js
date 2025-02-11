@@ -29,7 +29,7 @@ export function useFetchMovies(query) {
                 setIsLoading(true); // Inicia el estado de carga
                 setError(null);
 
-                const response = await fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${query}`)
+                const response = await fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${query}`)
 
                 if (!response.ok)
                     throw new Error("Error al cargar películas");
